@@ -1,30 +1,31 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>WiseGoat</title>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>       
+        <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">    
     </head>
     <body>
         <div class="container">
-            <div class="content">
-                <label>Wise</label><p>Goat</p>
-                <button id="getAdvice">PEDIR CONSELHO!</button>
-            </div>
-            <div class="illustration">
-                <img id="wisegoat" src="assets/image/bodezinho.png" alt="Bodezinho">
+            <div class="row left-panel">
+                <div class="col">
+                    <label>Wise</label><p>Goat</p>
+                    <button id="getAdvice">PEDIR CONSELHO!</button>
+                </div>
+                <div class="col right-panel">
+                    <img id="wisegoat" src="assets/image/bodezinho.png" alt="Bodezinho">
+                </div>
+                <div class=".col-xxl">
+                    <div class="advice"></div>
+                </div>
             </div>
         </div>
 
-        <div class="advice">
-           
-        </div>
-
-
-        <script src="assets/js/three.min.js"></script>
-        <script src="assets/js/space.js"></script>
         <script src="assets/js/magic.js"></script>
         <script src="assets/js/advice.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html>

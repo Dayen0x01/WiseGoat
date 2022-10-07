@@ -4,25 +4,17 @@
     border: 0;
     box-sizing: border-box;
 }
-canvas {
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: -1;
-  }
 body {
     width: 100vw;
     height: 100vh;
-    background: black;
-    overflow: hidden;
+    background-color: #000 !important;
 }
 .container {
-    display: flex;
     font-family: Montserrat;
     padding: 20px;
     margin-top: 100px;
 }
-.container button {
+#getAdvice {
     margin-top: 20px;
     height: 50px;
     width: 200px;
@@ -34,29 +26,32 @@ body {
     font-family: arial;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 18px;
 }
-.container button:hover {
+#getAdvice:hover {
     background: #72005F;
 }
-.container .content {
-    min-width: 50%;
+.left-panel {
     font-size: 70px;
     color: #72005F;
     text-align: center;
 }
-.container .content label {
+.left-panel label {
     color: #BAA193;
     font-size: 30px;
 }
-.container .content p {
+.left-panel p {
     margin-top: -20px;
 }
-.container .illustration img {
+.right-panel {
+    padding: 50px 10px 10px 10px;
+}
+.right-panel img {
     height: 400px;
     animation: Levitate 2s linear infinite;
     transition: 0.8s;
 }
-.container .illustration img:hover {
+.right-panel img:hover {
     cursor: pointer;
     filter: drop-shadow(10px 10px 200px #ff00ff) drop-shadow(-10px -10px 50px #ff00ff);
     transition: 0.3s;
@@ -91,14 +86,15 @@ body {
     opacity: 1;
 }
 .advice {
-
     color: white;
     font-family: Montserrat;
-    width: 800px;
-    height: 100px;
+    font-size: 15px;
+    width: 100%;
+    min-height: 100px;
     padding: 15px;
     border-radius: 5px;
     background-color: rgba(114, 0, 95, 0.5);
-    margin: 0 auto;
+    margin: 10px;
     transition: 0.3s;
+
 }
