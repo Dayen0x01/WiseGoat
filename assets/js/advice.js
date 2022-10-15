@@ -12,16 +12,11 @@ async function getAdvice()
 }
 async function getData()
 {
-    let response = await fetch('https://api.adviceslip.com/advice', {cache: "no-store"})
+    let response = await fetch('https://api.adviceslip.com/advice',  {cache: "no-store"})
     .then((response) => response.json())
     .then((data) => {
         return data.slip.advice;
     });
 
     return response;
-}
-
-async function translate(text)
-{
-    return "translated: " + text;
 }
